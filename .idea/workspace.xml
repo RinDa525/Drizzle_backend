@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a7b2e36-3456-496d-8739-0c43ce3186bf" name="변경" comment="LOGIN">
+    <list default="true" id="7a7b2e36-3456-496d-8739-0c43ce3186bf" name="변경" comment="gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/Drizzle_Prj/domain/auth/SigninService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/Drizzle_Prj/domain/auth/SigninService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1-firebase" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +104,7 @@
       <workItem from="1666948054956" duration="460000" />
       <workItem from="1666948527156" duration="41000" />
       <workItem from="1666948583041" duration="458000" />
+      <workItem from="1666963143774" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="longin">
       <created>1666947354749</created>
@@ -132,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666951637206</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gradle">
+      <created>1666963207658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666963207658</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="longin" />
     <MESSAGE value="LOGIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="LOGIN" />
+    <MESSAGE value="gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle" />
   </component>
 </project>
