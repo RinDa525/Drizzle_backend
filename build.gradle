@@ -29,6 +29,18 @@ dependencies {
     //스프링부트의 웹 관련 의존성을 추가하기 위함
     implementation "org.springframework.boot:spring-boot-starter-web"
     implementation "org.jetbrains.kotlin:kotlin-reflect"
+    //firebase 연동
+    implementation group: 'com.google.firebase', name: 'firebase-admin', version: '8.0.1'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    //데이터베이스 연결을 위한 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+    //BCrypt 사용
+    implementation 'org.mindrot:jbcrypt:0.4'
+
 }
 
 test {

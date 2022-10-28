@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://drizzle:3306/drizzle?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+  username: drizzle
+  password: admindrizzle
+  data-username: drizzle
+  data-password: admindrizzle
+  driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+    ddl-auto: update
+    database: mysql
+  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
