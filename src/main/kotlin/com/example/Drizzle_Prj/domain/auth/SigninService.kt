@@ -7,8 +7,8 @@ import com.example.Drizzle_Prj.domain.user.UserRepository
 import org.mindrot.jbcrypt.BCrypt
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import java.util.IllegalFormatException
-import javax.management.loading.UserRepository
+//import java.util.IllegalFormatException
+//import javax.management.loading.UserRepository
 
 @Service
 class SighinService @Autowired constructor(
@@ -18,8 +18,9 @@ class SighinService @Autowired constructor(
     //1
     fun signin(signinRequest: SigninRequest): SigninResponse {
         val user = userRepository
-            .findMyEmail(signinRequest.email.toLowerCase())
+            .findByEmail(signinRequest.email.lowercase())
             ?: throw DrizzleException("로그인 정보를 확인해주세요.")
+            //예제에서는 toLowerCase를 썼으나 lowercase로 대체
 
         if (isNotVaildPassword(signinRequest.password, user.password)) {
             throw DrizzleException("로그인 정보를 확인해주세요.")
@@ -34,7 +35,7 @@ class SighinService @Autowired constructor(
         hashed: String
     ) = BCrypt.checkpw(plain, hashed).not()
 
-    private fun responseWithTokens(user: User) = user.id?.let { userID ->
+    private fun responseWithTokens(user: User) = user.id?.let { userId ->
         SigninResponse(
             JWTUtil.createToken(user.email),
             JWTUtil.createRefreshToken(user.email),
