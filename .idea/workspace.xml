@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a7b2e36-3456-496d-8739-0c43ce3186bf" name="변경" comment="gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/Drizzle_Prj/domain/auth/SigninService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/Drizzle_Prj/domain/auth/SigninService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +105,7 @@
       <workItem from="1666948527156" duration="41000" />
       <workItem from="1666948583041" duration="458000" />
       <workItem from="1666963143774" duration="778000" />
+      <workItem from="1666965002028" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="longin">
       <created>1666947354749</created>

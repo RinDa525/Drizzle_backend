@@ -12,10 +12,10 @@ object JWTUtil {
     private const val REFRESH_EXPIRE_TIME=60L*60*24*30*1000 //30일
 
     private val SECRET = "your-secret"
-    private val algorithm: Algorithm = Algorithm.HWAC256(SECRET)
+    private val algorithm: Algorithm = Algorithm.HMAC256(SECRET)
 
     private val refreshSecret = "your-refresh-secret"
-    private val refreshAlgorithm: Algorithm = Algorithm.HWAC256(refreshSecret)
+    private val refreshAlgorithm: Algorithm = Algorithm.HMAC256(refreshSecret)
 
     fun createToken(email: String) = JWT.create()
         .withIssuer(ISSUER)
